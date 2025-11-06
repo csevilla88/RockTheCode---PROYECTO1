@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'Abeezee';
+  src: local("Abeezee"), url("./Fonts/ABeeZee/ABeeZee-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Abeezee', sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 20px;
+ }
+ .menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ }
+.logo {
+  display: flex;
+  align-items: center;
+}
+ .logo>img {
+  height: 40px;
+  width: 40px;
+ }
+ .nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-self: flex-start;
+  padding: 0;
+ }
+ .nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+ }
+ .nav-buttons {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  padding-right: 20px;
+ }
+
+.banner-principal>img {
+  width: 100%;
+  height: auto;
+ }
+ .banner-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  
+  color: white;
+  text-align: center;
+ }
+ .banner-text h1 {
+  font-size: 48px;
+  margin: 0;
+ }
+ .banner-text p {
+  font-size: 24px;
+ }
+ .galeria-coches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-around;
+  margin: 40px ;
+ }
+ .card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+ }
+ .galeria-coches .card{
+    height: 575px;
+ }
+ .galeria-coches .card > img {
+  width: 500px;
+  height: auto;
+ }
+ .card .extra-info {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+ }
+ .card .extra-info ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-around;
+  width: 150px;
+ }
+.card .extra-info li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f0f0f0;
+  border-radius: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.card .card-title {
+  font-family: 'Abeezee', sans-serif;
+  display: flex;
+  flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.card-title h2 {
+    font-size: 30px;
+}
+
+.card-title p {
+    font-size: 20px;
+    margin: 0;
+}
+
+ .btn-info {
+  padding: 12px 22px;
+  background-color: #FFF;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+ }
+ .btn-info:hover {
+  background-color: #7ba3ce;
+ }
+
+/* Color Classes for Car Options */
+.info-color .red {
+  background-color: #A10000;
+}   
+.info-color .blue {
+  background-color: #0010A1;
+}
+.info-color .black {
+  background-color: black;
+}   
+
+.info-color .yellow {
+  background-color: #E2C324;
+}
+.info-color .grey {
+  background-color: grey;
+}
+
+.discover-store {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-top: 40px;
+  width: 100%;
+}
+.discover-store img {
+  width: 100%;
+  max-height: 790px;
+}
+
+.discover-store .banner-text {
+  background-color: #a2a2a27c;
+  padding: 27px 35px;
+  border-radius: 15px;
+  text-align: left;
+}
+.discover-store .banner-text h4 {
+  font-size: 50px;
+  font-weight: normal;
+  text-align: left;
+  max-width: 360px;
+  padding-right: 120px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.galeryExtras {
+  padding: 20px 40px;
+}
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  padding-bottom: 25px;
+}
+
+.galeryExtras .card{
+    width: 540px;
+    height: 450px;
+    align-items: start;
+    padding: 40px;
+}
+.galeryExtras .card > img {
+    width: 100%;
+    height: 320px;
+    align-self: center;
+    object-fit: cover;        
+    object-position: 80% center;
+    
+}
+.galeryExtras .card h2 {
+    margin: 0;
+}
+#Banner-RedTentation{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+#Banner-RedTentation .container div{
+    width: 33%;
+}
+#Banner-RedTentation .banner-text {
+    bottom: 10%;
+    text-align: left;
+    top: unset;
+}
+#Banner-RedTentation .banner-text h4{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+#Banner-RedTentation .banner-text p{
+    padding-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    width: 50%;
+}
