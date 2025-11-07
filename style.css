@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Abeezee';
   src: local("Abeezee"), url("./Fonts/ABeeZee/ABeeZee-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -9,6 +9,7 @@ body {
   font-family: 'Abeezee', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
  }
 
 nav{
@@ -51,6 +52,10 @@ nav{
   padding-right: 20px;
  }
 
+ .nav-buttons .fa-list {
+    display: none;
+ }
+
 .banner-principal>img {
   width: 100%;
   height: auto;
@@ -78,12 +83,12 @@ nav{
   margin: 40px ;
  }
  .card {
-  border: 1px solid #ccc;
+  border: 1px solid #eeeeee;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-color: #ccc;
+  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -149,7 +154,6 @@ nav{
   background-color: #7ba3ce;
  }
 
-/* Color Classes for Car Options */
 .info-color .red {
   background-color: #A10000;
 }   
@@ -167,6 +171,23 @@ nav{
   background-color: grey;
 }
 
+.info-stores{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 40px;
+}
+.info-stores .store-locations h2{
+    font-size: 96px;
+    max-width: 60%;
+    text-wrap: wrap;
+    margin-bottom: 25px;
+}
+.info-stores .store-locations p{
+    font-size: 24px;
+    max-width: 600px;
+}
 .discover-store {
   display: flex;
   flex-direction: column;
@@ -188,9 +209,9 @@ nav{
   border-radius: 15px;
   text-align: left;
 }
-.discover-store .banner-text h4 {
+.banner-text h4 {
   font-size: 50px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
   max-width: 360px;
   padding-right: 120px;
@@ -254,8 +275,6 @@ nav{
     top: unset;
 }
 #Banner-RedTentation .banner-text h4{
-    font-size: 50px;
-    font-weight: 400;
     line-height: 50px;
     letter-spacing: 0%;
     margin: 0;
@@ -268,3 +287,352 @@ nav{
     letter-spacing: 0%;
     width: 50%;
 }
+
+#wheelProgram {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+#wheelProgram div{
+ width: 40%;
+ color: black;
+}
+#wheelProgram h4 {
+    font-size: 50px;
+}
+#wheelProgram .wheel-text{
+    padding: 40px;
+    width: 60%;
+}
+#wheelProgram-Mobile {
+    display: none;
+}
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 0px 0px 100px;
+  width: 100%;   
+}
+
+ .footer-lists{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+ }
+
+ .footer-lists ul {
+  list-style-type: none;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  padding: 0;
+  flex-direction: column;
+  font-size: 14px;
+ }
+
+ .footer-lists .list a{
+    color: rgba(255, 255, 255, 0.61);
+    text-decoration: none;
+ }
+ .footer-lists .list a:hover{
+    color: lightblue;
+ }
+
+ .footer-lists .list h3{
+    margin-bottom: 35px;
+    font-size: 20px;
+ }
+
+ .footer-contact {
+    background-color: #404243;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    margin-bottom: 80px;
+ }
+ .footer-contact p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 40px;
+ }
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  margin: 30px auto 20px auto;
+  border: 1px solid white;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 13px 17px 13px 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.subscribe input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.subscribe button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 40px;
+  
+}
+
+.subscribe button:hover {
+  background: #ddd;
+}
+
+.private-policy{
+    margin-top: 10px;
+}
+.private-policy input[type="checkbox"] {
+  accent-color: #fff;
+  margin-right: 8px;
+  border: 1px solid #fff;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+.private-policy a {
+    text-decoration: underline;
+}
+.social-media{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-media i{
+    color: white;
+}
+
+.container-footer h4 {
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+  .galeryExtras {
+    grid-template-columns: repeat(3, 80%);
+    gap: 15px;
+    padding: 20px;
+    scroll-padding: 20px;
+  }
+
+  .galeryExtras .card {
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .galeryExtras .card img {
+    height: 250px;
+    object-position: center center;
+    margin: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+    .menu .nav-menu {
+        display: none;
+    }
+    .nav-buttons {
+        margin: 0;
+        gap: 40px;
+        padding-right: 0px;
+    }
+    .nav-buttons .fa-list {
+        display: block;
+    }
+    .banner-text h1 {
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .banner-principal .banner-text {
+        top: 22%;
+        left: 15px;
+        text-align: left;
+    }
+    .banner-principal .banner-text p {
+        font-size: 12px;
+        margin: 0px;
+    }
+    .banner-principal img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .galeria-coches {
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+    .galeria-coches .card {
+        height: 335px;
+        padding: 10px;
+    }
+    .galeria-coches .card > img {
+        width: 370px;
+        height: 180px;
+        object-fit: cover;
+        padding-top: 20px;
+        object-position: center 50%;
+    }
+    .galeria-coches .extra-info .info-color {
+        display: none;
+    }
+    .galeria-coches .card .card-title{
+        align-items: center;
+        
+    }
+    .galeria-coches .card .card-title h2{
+        margin: 10px;
+        font-size: 28px;
+    }
+    .galeria-coches .extra-info {
+        align-items: center;
+        justify-content: center;
+    }
+    #hybrid-GLC img {
+        width: 320px;
+        object-position: 80% 10%;
+    }
+    .info-stores {
+        padding: 10px 30px;
+    }
+    .info-stores .store-locations{
+        text-align: center;
+    }
+    .info-stores .store-locations h2{
+        font-size: 37px;
+        font-weight: 500;
+        max-width: 100%;
+    }
+    .discover-store .banner-text{
+        top: 12%;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+    }
+   .banner-text h4 {
+        font-size: 32px;
+        padding-right: 0px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .discover-store img {
+        min-height: 300px;
+    } 
+    #Banner-RedTentation{
+        margin-top: 5px;
+    }
+    #Banner-RedTentation .container {
+        flex-direction: column;
+    }
+    #Banner-RedTentation .container div {
+        width: 100%;
+    }
+    #Banner-RedTentation .banner-text {
+        position: relative;
+        color: black;
+        left: 0;
+        background-color: #eeeeee;
+        padding: 10px 0px;
+    }
+    #Banner-RedTentation .banner-text h4{
+        padding-bottom: 5px;
+        font-size: 24px;
+    }
+    #Banner-RedTentation .banner-text p{
+        width: auto;
+        padding: 0px 30px;
+    }
+    #wheelProgram {
+        display: none;
+    }
+    #wheelProgram-Mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    #wheelProgram-Mobile .wheel-text {
+        text-align: left;
+    }
+    #wheelProgram-Mobile .wheel-text h4 {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center ;
+    }
+    #wheelProgram-Mobile img {
+        width: 100%;
+    }
+    .footer-contact{
+        padding: 35px 0px;
+        margin-bottom: 25px;
+    }
+
+    .container-footer {
+        padding: 0px 25px;
+    }
+
+    .footer-lists{
+        flex-direction: column;
+    }
+    #footer {
+        padding-bottom: 50px;
+    }
+
+    .galeryExtras {
+        padding: 10px 35px;
+    }
+    .galeryExtras .card {
+        width: 300px;
+        height: auto;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .galeryExtras .card img {
+        height: 220px;
+        object-fit: cover;
+        padding: 10px 0px;
+    }
+    .galeryExtras .card h2 {
+         font-size: 28px;
+        font-weight: 600;
+    }
+}
+
