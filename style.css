@@ -364,13 +364,18 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 30px 40px;
     margin-bottom: 80px;
+    padding: 10px 0px;
  }
  .footer-contact p {
     font-size: 16px;
     font-weight: 400;
     padding: 0px 40px;
+    margin: 30px;
+ }
+
+ .footer-contact button {
+    margin: auto 0px;
  }
 .subscribe {
   display: flex;
@@ -636,3 +641,24 @@ nav{
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .banner-text {
+    top: 25%;
+  }
+  .galeria-coches .card > img {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-text {
+    top: 28%;
+  }
+  .banner-text h1{
+    font-size: 40px;
+  }
+  .galeria-coches .card > img {
+    width: 350px;
+    object-fit: cover;
+    object-position: center 50%;
+  }
+}
