@@ -95,6 +95,7 @@ nav{
   align-items: center;
   padding: 20px 40px;
  }
+ 
  .galeria-coches .card{
     height: 575px;
  }
@@ -149,8 +150,13 @@ nav{
   border: none;
   border-radius: 25px;
   cursor: pointer;
- }
- .btn-info:hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+.btn-info:hover {
   background-color: #7ba3ce;
  }
 
@@ -374,7 +380,7 @@ nav{
     margin: 30px;
  }
 
- .footer-contact button {
+ .footer-contact .btn-info {
     margin: auto 0px;
  }
 .subscribe {
