@@ -29,6 +29,8 @@ body {
   font-family: var(--font-main);
   margin: 0;
   padding: 0;
+  color: var(--color-text);
+  line-height: 1.4;
   overflow-x: hidden;
  }
 
@@ -711,16 +713,88 @@ nav{
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .banner-text {
-    top: 28%;
+  nav {
+    padding: 10px 16px;
   }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .nav-buttons {
+    gap: 28px;
+    padding-right: 0;
+  }
+
+  .banner-text {
+    top: 24%;
+    left: 4%;
+  }
+
   .banner-text h1{
-    font-size: 40px;
+    font-size: 36px;
   }
+
+  .banner-text p {
+    font-size: 20px;
+  }
+
   .galeria-coches .card > img {
     width: 350px;
     object-fit: cover;
     object-position: center 50%;
+  }
+
+  .info-stores {
+    padding: 24px;
+  }
+
+  .info-stores .store-locations h2 {
+    font-size: 58px;
+    max-width: 100%;
+  }
+
+  .info-stores .store-locations p {
+    font-size: 22px;
+    max-width: 100%;
+  }
+
+  .discover-store .banner-text {
+    left: 24px;
+    right: 24px;
+    top: 18%;
+  }
+
+  .discover-store .banner-text h4 {
+    font-size: 42px;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  #Banner-RedTentation .banner-text {
+    left: 4%;
+    right: 4%;
+  }
+
+  #Banner-RedTentation .banner-text h4 {
+    font-size: 36px;
+    line-height: 1.15;
+    max-width: 90%;
+  }
+
+  #Banner-RedTentation .banner-text p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  #wheelProgram h4 {
+    font-size: 40px;
+  }
+
+  .footer-contact p {
+    margin: 20px;
+    padding: 0 24px;
   }
 }
 
